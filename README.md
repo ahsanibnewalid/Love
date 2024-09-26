@@ -14,3 +14,17 @@ To get started with this project, clone the repository and explore the different
 ```bash
 git clone https://github.com/ahsanibnewalid/Love.git
 cd Love
+Usage
+Feel free to explore the code, run the examples, and contribute your own ideas. If you have any questions or suggestions, please open an issue or submit a pull request.
+
+Contributing
+We welcome contributions from everyone. Please read our contributing guidelines to get started.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+Thanks to all the contributors who have helped make this project possible.
+Special thanks to the open-source community for their continuous support and inspiration.
+Contact
+For any inquiries, please contact Ahsan Ibne Walid.
