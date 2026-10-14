@@ -9,7 +9,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
     :root{color-scheme:dark;--bg:#170d19;--panel:#241625;--panel2:#2d1a2c;--ink:#fff5f7;--muted:#c1aab9;--pink:#ff6f9f;--hot:#ff477e;--line:#59364e;--cream:#ffe5c9;--green:#a8f0ce}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#542344 0,transparent 36%),radial-gradient(ellipse at 0% 55%,#2c1935 0,transparent 40%),var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit}.shell{width:min(1120px,calc(100% - 36px));margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid #ffffff17}.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em}.brand-mark{display:grid;place-items:center;width:36px;height:36px;background:var(--pink);color:#2a1020;border-radius:12px;font-size:20px;box-shadow:0 0 28px #ff6f9f44}.status{font:11px 'DM Mono',monospace;color:var(--green);letter-spacing:.1em}.status:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:8px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:70px 0 58px}.eyebrow{font:11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.2em;color:var(--pink)}h1,h2,h3,p{margin-top:0}h1{font:clamp(48px,7vw,84px)/.98 'Playfair Display',serif;letter-spacing:-.045em;margin:20px 0}.italic{color:var(--pink);font-style:italic}.lede{max-width:530px;color:var(--muted);font-size:17px;line-height:1.75}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{border:1px solid var(--line);border-radius:999px;padding:13px 20px;color:var(--ink);background:#ffffff08;transition:transform .2s,background .2s,border .2s}.btn:hover{transform:translateY(-2px);border-color:var(--pink)}.btn.primary{background:var(--pink);border-color:var(--pink);color:#2b1020;font-weight:700}.btn.small{padding:9px 13px;font-size:13px}.heart-stage{min-height:320px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #ffffff18;border-radius:28px;background:linear-gradient(145deg,#ff6f9f12,#ffffff03);isolation:isolate}.heart-stage:before,.heart-stage:after{content:'';position:absolute;border:1px solid #ff8db533;border-radius:50%;width:230px;height:230px;animation:orbit 18s linear infinite}.heart-stage:after{width:290px;height:290px;animation-direction:reverse;animation-duration:25s}.big-heart{font-size:112px;filter:drop-shadow(0 0 34px #ff477e66);animation:beat 2s ease-in-out infinite;z-index:1}.spark{position:absolute;color:var(--cream);font-size:20px;animation:float 4s ease-in-out infinite}.s1{top:20%;left:20%}.s2{top:24%;right:19%;animation-delay:1s}.s3{bottom:19%;left:25%;animation-delay:2s}.s4{bottom:17%;right:23%;animation-delay:.5s}.stage-caption{position:absolute;bottom:20px;color:var(--muted);font:10px 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:34px 0 20px}.section-head h2{font:clamp(29px,4vw,42px) 'Playfair Display',serif;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#ffffff0a,#ffffff03);border:1px solid #ffffff16;border-radius:22px;padding:24px;min-width:0}.card-number{font:11px 'DM Mono',monospace;color:var(--pink)}.card h3{font:24px 'Playfair Display',serif;margin:16px 0 8px}.card p{color:var(--muted);line-height:1.65;font-size:14px;min-height:45px}.card .btn{margin-top:8px}.iconbox{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:#ff6f9f17;font-size:22px}.wide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.panel-title{font:26px 'Playfair Display',serif;margin:0 0 8px}.sub{color:var(--muted);font-size:14px;line-height:1.6}.field{display:block;width:100%;border:1px solid var(--line);border-radius:12px;background:#160d19;color:var(--ink);padding:12px 14px;outline:none;margin:8px 0 14px}.field:focus{border-color:var(--pink);box-shadow:0 0 0 3px #ff6f9f18}label{font-size:12px;color:#e2cbd8}.row-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.result{margin-top:16px;border:1px solid #ff6f9f55;background:#ff6f9f0d;border-radius:16px;padding:18px;line-height:1.7;display:none}.result.show{display:block;animation:rise .35s ease}.result strong{color:var(--pink)}.result p{margin:6px 0 0;color:var(--muted);font-size:14px}.choices{display:grid;gap:10px;margin-top:18px}.choice{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:#ffffff04;border-radius:14px;padding:14px;color:var(--ink)}.choice:hover,.choice:focus{border-color:var(--pink);background:#ff6f9f0c}.choice .emoji{font-size:21px}.note-output{white-space:pre-wrap;min-height:90px;padding:16px;background:#160d19;border:1px dashed var(--line);border-radius:14px;color:#f6dce8;line-height:1.8;margin:12px 0;display:none}.note-output.show{display:block}.footer{margin-top:70px;border-top:1px solid #ffffff17;padding:26px 0 36px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px}.footer strong{color:var(--pink)}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#fff0f5;color:#341426;padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}.confetti{position:fixed;top:-15px;z-index:20;pointer-events:none;animation:fall 2.5s linear forwards}@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.09)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(10deg)}}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes fall{to{transform:translateY(110vh) rotate(650deg);opacity:0}}@media(max-width:780px){.hero{grid-template-columns:1fr;gap:26px;padding:46px 0 30px}.heart-stage{min-height:250px}.big-heart{font-size:90px}.grid{grid-template-columns:1fr}.card p{min-height:0}.wide-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.footer{flex-direction:column}.shell{width:min(100% - 28px,600px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#542344 0,transparent 36%),radial-gradient(ellipse at 0% 55%,#2c1935 0,transparent 40%),var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit}.shell{width:min(1120px,calc(100% - 36px));margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid #ffffff17}.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em}.brand-mark{display:grid;place-items:center;width:36px;height:36px;background:var(--pink);color:#2a1020;border-radius:12px;font-size:20px;box-shadow:0 0 28px #ff6f9f44}.status{font:11px 'DM Mono',monospace;color:var(--green);letter-spacing:.1em}.status:before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:8px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:70px 0 58px}.eyebrow{font:11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.2em;color:var(--pink)}h1,h2,h3,p{margin-top:0}h1{font:clamp(48px,7vw,84px)/.98 'Playfair Display',serif;letter-spacing:-.045em;margin:20px 0}.italic{color:var(--pink);font-style:italic}.lede{max-width:530px;color:var(--muted);font-size:17px;line-height:1.75}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{border:1px solid var(--line);border-radius:999px;padding:13px 20px;color:var(--ink);background:#ffffff08;transition:transform .2s,background .2s,border .2s}.btn:hover{transform:translateY(-2px);border-color:var(--pink)}.btn.primary{background:var(--pink);border-color:var(--pink);color:#2b1020;font-weight:700}.btn.small{padding:9px 13px;font-size:13px}.heart-stage{min-height:320px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #ffffff18;border-radius:28px;background:linear-gradient(145deg,#ff6f9f12,#ffffff03);isolation:isolate}.heart-stage:before,.heart-stage:after{content:'';position:absolute;border:1px solid #ff8db533;border-radius:50%;width:230px;height:230px;animation:orbit 18s linear infinite}.heart-stage:after{width:290px;height:290px;animation-direction:reverse;animation-duration:25s}.big-heart{font-size:112px;filter:drop-shadow(0 0 34px #ff477e66);animation:beat 2s ease-in-out infinite;z-index:1}.spark{position:absolute;color:var(--cream);font-size:20px;animation:float 4s ease-in-out infinite}.s1{top:20%;left:20%}.s2{top:24%;right:19%;animation-delay:1s}.s3{bottom:19%;left:25%;animation-delay:2s}.s4{bottom:17%;right:23%;animation-delay:.5s}.stage-caption{position:absolute;bottom:20px;color:var(--muted);font:10px 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:34px 0 20px}.section-head h2{font:clamp(29px,4vw,42px) 'Playfair Display',serif;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#ffffff0a,#ffffff03);border:1px solid #ffffff16;border-radius:22px;padding:24px;min-width:0}.card-number{font:11px 'DM Mono',monospace;color:var(--pink)}.card h3{font:24px 'Playfair Display',serif;margin:16px 0 8px}.card p{color:var(--muted);line-height:1.65;font-size:14px;min-height:45px}.card .btn{margin-top:8px}.iconbox{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:#ff6f9f17;font-size:22px}.wide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.panel-title{font:26px 'Playfair Display',serif;margin:0 0 8px}.sub{color:var(--muted);font-size:14px;line-height:1.6}.field{display:block;width:100%;border:1px solid var(--line);border-radius:12px;background:#160d19;color:var(--ink);padding:12px 14px;outline:none;margin:8px 0 14px}.field:focus{border-color:var(--pink);box-shadow:0 0 0 3px #ff6f9f18}label{font-size:12px;color:#e2cbd8}.row-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.result{margin-top:16px;border:1px solid #ff6f9f55;background:#ff6f9f0d;border-radius:16px;padding:18px;line-height:1.7;display:none}.result.show{display:block;animation:rise .35s ease}.result strong{color:var(--pink)}.result p{margin:6px 0 0;color:var(--muted);font-size:14px}.choices{display:grid;gap:10px;margin-top:18px}.mood-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}.mood-btn{border:1px solid var(--line);background:#ffffff05;border-radius:15px;padding:14px 8px;color:var(--ink);display:grid;gap:7px;justify-items:center;transition:transform .2s,border-color .2s}.mood-btn:hover,.mood-btn[aria-pressed=true]{border-color:var(--pink);background:#ff6f9f12;transform:translateY(-2px)}.mood-btn span{font-size:25px}.mood-btn small{font-size:12px;color:var(--muted)}.journal-entry{padding:10px 12px;border-bottom:1px solid #ffffff12;color:var(--muted);font-size:13px;line-height:1.5}.journal-entry strong{color:var(--pink)}.journal-list{margin-top:10px;max-height:220px;overflow:auto}.mood-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}@media(max-width:480px){.mood-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}.choice{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:#ffffff04;border-radius:14px;padding:14px;color:var(--ink)}.choice:hover,.choice:focus{border-color:var(--pink);background:#ff6f9f0c}.choice .emoji{font-size:21px}.note-output{white-space:pre-wrap;min-height:90px;padding:16px;background:#160d19;border:1px dashed var(--line);border-radius:14px;color:#f6dce8;line-height:1.8;margin:12px 0;display:none}.note-output.show{display:block}.footer{margin-top:70px;border-top:1px solid #ffffff17;padding:26px 0 36px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px}.footer strong{color:var(--pink)}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#fff0f5;color:#341426;padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}.confetti{position:fixed;top:-15px;z-index:20;pointer-events:none;animation:fall 2.5s linear forwards}@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.09)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(10deg)}}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes fall{to{transform:translateY(110vh) rotate(650deg);opacity:0}}@media(max-width:780px){.hero{grid-template-columns:1fr;gap:26px;padding:46px 0 30px}.heart-stage{min-height:250px}.big-heart{font-size:90px}.grid{grid-template-columns:1fr}.card p{min-height:0}.wide-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.footer{flex-direction:column}.shell{width:min(100% - 28px,600px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
 <body>
@@ -54,6 +54,41 @@
         </section>
       </div>
     </section>
+    <section id="moodGarden" style="padding-top:54px">
+      <div class="section-head"><div><div class="eyebrow">EXPERIMENT 04 / Your emotional weather</div><h2>The mood garden</h2></div><p>Every feeling deserves a little room.</p></div>
+      <div class="wide-grid">
+        <section class="card">
+          <div class="iconbox">🌷</div><h3 class="panel-title">How are you feeling today?</h3>
+          <p class="sub">Choose the closest feeling. You can change it whenever you need to—feelings are allowed to be complicated.</p>
+          <div class="mood-grid" id="moodChoices">
+            <button class="mood-btn" type="button" data-mood="happy" aria-pressed="false"><span>☀️</span><small>Happy</small></button>
+            <button class="mood-btn" type="button" data-mood="hopeful" aria-pressed="false"><span>🌈</span><small>Hopeful</small></button>
+            <button class="mood-btn" type="button" data-mood="in-love" aria-pressed="false"><span>🥰</span><small>In love</small></button>
+            <button class="mood-btn" type="button" data-mood="grateful" aria-pressed="false"><span>🌻</span><small>Grateful</small></button>
+            <button class="mood-btn" type="button" data-mood="missing" aria-pressed="false"><span>💌</span><small>Missing someone</small></button>
+            <button class="mood-btn" type="button" data-mood="nervous" aria-pressed="false"><span>🦋</span><small>Nervous</small></button>
+            <button class="mood-btn" type="button" data-mood="confused" aria-pressed="false"><span>🌫️</span><small>Confused</small></button>
+            <button class="mood-btn" type="button" data-mood="sad" aria-pressed="false"><span>🌧️</span><small>Sad</small></button>
+            <button class="mood-btn" type="button" data-mood="lonely" aria-pressed="false"><span>🌙</span><small>Lonely</small></button>
+            <button class="mood-btn" type="button" data-mood="heartbroken" aria-pressed="false"><span>💔</span><small>Heartbroken</small></button>
+            <button class="mood-btn" type="button" data-mood="peaceful" aria-pressed="false"><span>🍃</span><small>Peaceful</small></button>
+            <button class="mood-btn" type="button" data-mood="overwhelmed" aria-pressed="false"><span>🫶</span><small>Overwhelmed</small></button>
+          </div>
+          <div class="result" id="moodResult" aria-live="polite"></div>
+          <div class="mood-actions"><button class="btn small" id="saveMood" type="button" disabled>Save to my journal</button><button class="btn small" id="copyMood" type="button" disabled>Copy affirmation</button></div>
+        </section>
+        <section class="card">
+          <div class="iconbox">📖</div><h3 class="panel-title">A little feelings journal</h3>
+          <p class="sub">Save a private note for yourself in this browser. Entries stay on this device and are not sent to a server. Avoid writing details you wouldn't want someone with access to this device to see.</p>
+          <label for="journalNote">Anything you want to remember?</label>
+          <textarea class="field" id="journalNote" rows="4" maxlength="500" placeholder="Today I felt… and I want to remember…"></textarea>
+          <div class="mood-actions"><button class="btn primary" id="saveJournal" type="button">Save today's note</button><button class="btn small" id="clearJournal" type="button">Clear journal</button></div>
+          <div class="journal-list" id="journalList" aria-live="polite"></div>
+          <p class="sub" style="font-size:11px;margin:12px 0 0">Your journal uses this browser's local storage. Clearing browser data may erase it.</p>
+        </section>
+      </div>
+    </section>
+
     <section style="padding-top:54px">
       <div class="section-head"><div><div class="eyebrow">A note from the developer</div><h2>Humans aren't boolean.</h2></div></div>
       <div class="card" style="display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start"><div class="iconbox">⌘</div><div><p style="font:22px/1.45 'Playfair Display',serif;margin-bottom:10px">In the original program, love was a pair of yes-or-no answers. In real life, feelings are more interesting than that.</p><p class="sub" style="margin-bottom:0">This playful project grows from that original idea: use code to ask a human question, not to decide someone else's feelings. Respect, consent, kindness, and honest communication matter more than any result on a screen.</p></div></div>
@@ -85,6 +120,89 @@
       $('noteStart').addEventListener('click', () => { $('notePanel').scrollIntoView({behavior:'smooth',block:'center'}); $('theirName').focus({preventScroll:true}); });
       $('joyBtn').addEventListener('click', () => { celebrate(); toast('A little joy, just for you. ♥'); });
       $('surpriseBtn').addEventListener('click', () => { celebrate(55); toast('In case nobody told you today: you matter. ♥'); });
+      const moodMessages = {
+        happy: ['Let yourself enjoy the good moment. ☀️', 'You do not have to earn every smile. Let the good feeling be real, and share it if you want to.'],
+        hopeful: ['Hope can be a small light, and that is enough. 🌈', 'You can be hopeful without needing to know exactly how everything will turn out. Take the next kind step.'],
+        'in-love': ['It is sweet to care deeply. 🥰', 'Enjoy the warmth while keeping room for honesty, boundaries, and the other person’s own feelings.'],
+        grateful: ['Notice the good without feeling you owe anyone perfection. 🌻', 'Gratitude can make a moment brighter. If someone helped you feel this way, a simple thank-you can mean a lot.'],
+        missing: ['Missing someone means this connection matters to you. 💌', 'You can miss someone and still care for yourself today. If it feels right and respectful, consider sending a gentle hello.'],
+        nervous: ['You can be brave and nervous at the same time. 🦋', 'Take one slow breath. You do not have to solve the whole relationship today—one honest, respectful step is enough.'],
+        confused: ['You are allowed to not have the answer yet. 🌫️', 'Give yourself time to notice what you feel, what you need, and what the other person actually communicates. You do not have to rush a label.'],
+        sad: ['You deserve gentleness on the difficult days. 🌧️', 'Let the feeling exist without judging yourself for it. A small comforting action or a trusted person may help you get through this moment.'],
+        lonely: ['Feeling lonely is not proof that you are unlovable. 🌙', 'You deserve connection and care. Consider reaching out to someone safe, or choosing one small thing that helps you feel grounded right now.'],
+        heartbroken: ['You do not have to heal on anyone else’s timeline. 💔', 'Heartbreak can hurt deeply. Give yourself space, lean on people you trust, and remember that your worth is not decided by one relationship.'],
+        peaceful: ['You are allowed to enjoy a quiet heart. 🍃', 'You do not need drama to prove a feeling is meaningful. Let this calm moment be enough.'],
+        overwhelmed: ['One breath. One moment. One next step. 🫶', 'You do not have to carry everything at once. Pause, take a little space, and ask for support if things feel too heavy to manage alone.']
+      };
+      let selectedMood = '';
+      let selectedAffirmation = '';
+      const journalKey = 'love-lab-mood-journal-v1';
+      function readJournal() {
+        try {
+          const value = JSON.parse(localStorage.getItem(journalKey) || '[]');
+          return Array.isArray(value) ? value.filter((entry) => entry && typeof entry.text === 'string' && typeof entry.date === 'string') : [];
+        } catch { return []; }
+      }
+      function renderJournal() {
+        const list = $('journalList'); list.replaceChildren();
+        const entries = readJournal().slice().reverse();
+        if (!entries.length) {
+          const empty = document.createElement('p'); empty.className = 'sub'; empty.textContent = 'Your saved notes will appear here on this device.'; list.appendChild(empty); return;
+        }
+        entries.forEach((entry) => {
+          const item = document.createElement('div'); item.className = 'journal-entry';
+          const title = document.createElement('strong'); title.textContent = entry.mood ? entry.mood + ' · ' : '';
+          const date = document.createElement('span'); date.textContent = entry.date;
+          const note = document.createElement('div'); note.textContent = entry.text;
+          item.append(title, date, note); list.appendChild(item);
+        });
+      }
+      function saveJournalEntry(entry) {
+        try {
+          const entries = readJournal(); entries.push(entry);
+          localStorage.setItem(journalKey, JSON.stringify(entries.slice(-30)));
+          renderJournal(); return true;
+        } catch { toast('Could not save here. Check your browser storage settings.'); return false; }
+      }
+      $('moodChoices').addEventListener('click', (event) => {
+        const button = event.target.closest('button[data-mood]'); if (!button) return;
+        selectedMood = button.dataset.mood;
+        const message = moodMessages[selectedMood]; selectedAffirmation = message[0] + '\n' + message[1];
+        $('moodChoices').querySelectorAll('button').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        const result = $('moodResult'); result.replaceChildren();
+        const strong = document.createElement('strong'); strong.textContent = message[0];
+        const paragraph = document.createElement('p'); paragraph.textContent = message[1];
+        result.append(strong, paragraph); result.classList.add('show');
+        $('saveMood').disabled = false; $('copyMood').disabled = false;
+      });
+      $('saveMood').addEventListener('click', () => {
+        if (!selectedMood) return;
+        if (saveJournalEntry({ mood: selectedMood, text: selectedAffirmation, date: new Date().toLocaleString() })) toast('Your mood note is saved on this device. 🌷');
+      });
+      $('copyMood').addEventListener('click', async () => {
+        if (!selectedAffirmation) return;
+        try {
+          if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(selectedAffirmation);
+          else {
+            const field = document.createElement('textarea'); field.value = selectedAffirmation; field.style.position = 'fixed'; field.style.opacity = '0'; document.body.appendChild(field); field.select();
+            const copied = document.execCommand('copy'); field.remove(); if (!copied) throw new Error('Copy unavailable');
+          }
+          toast('Affirmation copied. Keep it close. 💗');
+        } catch { toast('Copy is unavailable here—select the text and copy it manually.'); }
+      });
+      $('saveJournal').addEventListener('click', () => {
+        const text = $('journalNote').value.trim();
+        if (!text) { toast('Write a small note first. ✎'); $('journalNote').focus(); return; }
+        if (saveJournalEntry({ mood: selectedMood || 'reflection', text, date: new Date().toLocaleString() })) {
+          $('journalNote').value = ''; toast('Your note is saved in this browser. 📖');
+        }
+      });
+      $('clearJournal').addEventListener('click', () => {
+        if (!readJournal().length) { toast('Your journal is already empty.'); return; }
+        try { localStorage.removeItem(journalKey); renderJournal(); toast('Your local journal has been cleared.'); }
+        catch { toast('Could not clear browser storage.'); }
+      });
+      renderJournal();
       const reflections = {
         care: ['That sounds like a lovely foundation. 🌱', 'Feeling safe, respected, and free to be yourself can be a meaningful sign of a healthy connection. Keep communicating and noticing how you both feel.'],
         curious: ['Butterflies can be a beginning, not a verdict. 🦋', 'Take your time. Curiosity can grow into something deeper, or simply teach you about yourself. Let the connection unfold without rushing it.'],
