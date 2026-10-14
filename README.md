@@ -62,7 +62,7 @@ The decorative Google Fonts are optional; system fallbacks keep the interface us
 
 ## 🧰 Original C program
 
-The repository's original console program remains available as `BrokenLove.c`. Compile and run it with a C compiler such as GCC:
+The interactive C console program is available as `BrokenLove.c`. It now includes a four-option main menu, a four-outcome love check-in, 14 emotion reflections, a personalized love-note maker, and kind reminders. It validates menu and yes/no input and handles all combinations in the love check-in. The program is for reflection and fun; it cannot detect another person's feelings. Compile and run it with a C compiler such as GCC:
 
 ```bash
 gcc BrokenLove.c -o broken-love
