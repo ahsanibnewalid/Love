@@ -22,10 +22,14 @@
 
 - **Feeling Finder** — choose a reflection that matches how you feel and get a gentle, non-judgmental response.
 - **Personal love-note maker** — write a note using names and a detail you appreciate, then copy it to personalize and share.
+- **Mood Garden** — choose from 12 emotions, including happy, hopeful, in love, grateful, missing someone, nervous, confused, sad, lonely, heartbroken, peaceful, and overwhelmed.
+- **Personalized emotional support** — each mood offers a gentle, non-judgmental reflection and affirmation; copy it to keep or share.
+- **Private feelings journal** — save mood check-ins and personal notes in your browser, review recent entries, or clear the journal. The app keeps up to 30 entries locally.
+- **Personal love-note maker** — write a note using names and a detail you appreciate, then copy it to personalize and share.
 - **Celebration effects** — animated hearts, sparkles, and a confetti surprise.
 - **Responsive layout** — designed for phones, tablets, and desktop screens.
 - **Accessible interactions** — keyboard-friendly controls, live result announcements, and reduced-motion support.
-- **Privacy-minded by design** — no account, backend, analytics, or form submission. Your entries remain in the current browser page.
+- **Privacy-minded by design** — no account, backend, analytics, or form submission. Journal entries are stored in this browser on this device, not sent to a server; anyone with access to the same browser profile may be able to view them.
 - **No build step** — plain HTML, CSS, and JavaScript.
 
 > This is a playful reflection tool, not a real love detector or a substitute for honest communication and consent.
