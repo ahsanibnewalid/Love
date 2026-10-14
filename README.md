@@ -71,6 +71,27 @@ gcc BrokenLove.c -o broken-love
 
 On Windows with GCC installed, run `broken-love.exe` after compiling. The browser experience is a separate, more interactive companion; it does not replace the original source file.
 
+## 🛠️ Troubleshooting C compilation
+
+If compilation reports errors such as `function definition is not allowed here` inside a system header like `SYSROOT/usr/include/ctype.h`, the header is usually not the real cause. The compiler may be interpreting the header as though it were included inside a function because of a syntax problem earlier in the source file.
+
+Try these checks:
+
+1. Make sure the standard headers are at the top of `BrokenLove.c`, outside every function:
+   ```c
+   #include <stdio.h>
+   #include <ctype.h>
+   #include <string.h>
+   ```
+2. Inspect the source lines immediately before the reported include line for a missing closing brace (`}`), an unfinished block comment (`/* ... */`), or an unmatched conditional-preprocessor directive.
+3. Compile the complete `BrokenLove.c` file as C with GCC:
+   ```bash
+   gcc -std=c11 -Wall -Wextra BrokenLove.c -o broken-love
+   ```
+4. Do **not** edit files inside `SYSROOT` or the system's `ctype.h`. If the error persists, inspect the first error and the source file named in the diagnostic (for example, `default.c`) around the indicated line. Make sure you are compiling the intended source file and not an unrelated generated or wrapper file.
+
+If you are compiling in an online IDE or Android compiler app, its generated file (such as `default.c`) may differ from `BrokenLove.c`. Check that the complete source was pasted correctly and that the tool is using a C compiler.
+
 ## 📁 Project structure
 
 ```text
